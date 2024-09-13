@@ -35,4 +35,6 @@ public class CandidateServiceImplement implements CandidateService{
     public List<Candidate> findAllCandidates(){
         return candidateRepository.findAll();
     }
+
+
 }

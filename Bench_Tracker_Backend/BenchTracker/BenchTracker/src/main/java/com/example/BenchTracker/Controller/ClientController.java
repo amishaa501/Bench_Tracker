@@ -9,6 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class ClientController {
 
@@ -24,5 +26,10 @@ public class ClientController {
     @GetMapping("/getClientById/{clientId}")
     ResponseEntity<?> getClient(@PathVariable String clientId){
         return new ResponseEntity<>(clientService.getClientById(clientId),HttpStatus.OK);
+    }
+
+    @GetMapping("/getAllClients")
+    List<Client> getAllClients(){
+        return clientService.getAllClients();
     }
 }

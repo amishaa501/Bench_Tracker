@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class CandidateController {
@@ -32,4 +33,13 @@ public class CandidateController {
     List<Candidate> getAllCandidates(){
         return candidateService.findAllCandidates();
     }
+
+//    @PutMapping("/blockCandidate/{empId}")
+//    ResponseEntity<?> blockCandidate(@PathVariable String empId){
+//
+//        Optional<?> candidate = candidateService.getCandidateById(empId);
+//
+//        //blockedBy-> id of the mentor
+//
+//    }
 }

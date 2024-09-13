@@ -1,0 +1,14 @@
+
+/* Ensure that the content area accounts for the fixed header */
+.content {
+  margin-top: 64px; /* Adjust if the header height is different */
+  margin-left: 240px; /* Width of the sidebar if applicable */
+  width: calc(100% - 240px); /* Full width minus sidebar width */
+  height: calc(100vh - 64px); /* Full height minus header height */
+  overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+.table-container {
+  max-width: 100%; /* Ensure it doesn't overflow its parent container */
+  overflow-x: auto; /* Enables horizontal scrolling */
+}

@@ -13,4 +13,5 @@ public interface CandidateService {
     public Optional<Candidate> getCandidateById(Integer id);
 
     public List<Candidate> findAllCandidates();
+
 }

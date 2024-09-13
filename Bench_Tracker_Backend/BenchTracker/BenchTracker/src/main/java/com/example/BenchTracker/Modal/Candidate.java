@@ -50,7 +50,7 @@ public class Candidate {
     private Integer aging;
 
     @NonNull
-    private Map<String,String> interviewsScheduled;// maps date->clientId
+    private List<CandidateInterview>candidateInterview;
 
     @NonNull
     private String client;
@@ -59,10 +59,7 @@ public class Candidate {
     private Map<String,String> comment; // empId -> comment
 
     @NonNull
-    private Integer mentorRating;
-
-    @NonNull
-    private Map<String,String> mentorFeedback; // mentorId -> feedback
+    private List<MentorSession> mentorSessions;
 
     @NonNull
     private String Location;
